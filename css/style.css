@@ -39,7 +39,7 @@ header .justify-content-end img {
 }
 
 .hero-carousel__slider {
-  margin: 1rem 0;
+  padding-block: 1rem;
 }
 
 .slider-img--active {
@@ -98,10 +98,25 @@ header .justify-content-end img {
   color: white;
 }
 
+.card-custom {
+  display: flex;
+  flex-direction: column;
+}
+
+.card--ver {
+}
+
 @media screen and (min-width: 992px) {
   .hero h3,
   .hero p,
   .hero img {
     width: 35%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .card--hor {
+    flex-direction: row;
+    align-items: center;
   }
 }
