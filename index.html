@@ -10,26 +10,222 @@
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="./css/style.css" />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
 
+    <link rel="stylesheet" href="./css/style.css" />
     <title>Playstation</title>
   </head>
+
   <body>
     <header>
-      <div>
-        <!-- logo -->
+      <div class="justify-content-end d-flex">
+        <img src="./img/sony_logo.svg" alt="Logo Sony" />
       </div>
-      <nav></nav>
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="./img/play_logo.svg" alt="Logo Playstation" />
+          </a>
+
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarColor01"
+            aria-controls="navbarColor01"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarColor01">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarGames"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Giochi
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarGames"></ul>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarHardware"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Hardware
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarHardware"></ul>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarServices"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Servizi
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarServices"></ul>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarNews"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Novità
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarNews"></ul>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarBuy"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Fai acquisti
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarBuy"></ul>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarSupport"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Supporto
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarSupport"></ul>
+              </li>
+            </ul>
+            <div class="d-flex">
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarMyPlaystation"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  My Playstation
+                </a>
+                <ul
+                  class="dropdown-menu"
+                  aria-labelledby="navbarMyPlaystation"
+                ></ul>
+              </li>
+
+              <button class="btn btn-outline-light" type="submit">
+                Search
+              </button>
+            </div>
+          </div>
+        </div>
+      </nav>
     </header>
 
-    <section class="hero">
-      <div>
-        <!-- bg-image -->
-        <h3></h3>
-        <p></p>
-        <button></button>
+    <section class="hero-carousel">
+      <div class="hero hero--returnal">
+        <div
+          class="container text-white d-flex flex-column justify-content-end"
+        >
+          <img
+            class="returnal-banner-logo"
+            src="./img/returnal-hero-banner-logo.png"
+            alt="Logo Returnal"
+          />
+          <h3>Rompi il cerchio</h3>
+          <p>
+            Rialzati dopo ogni sconfitta e affronta una nuova sfida con ogni
+            rinascita in questo esplosivo thriller fantascientifico, disponibile
+            in esclusiva PS5
+          </p>
+          <button class="btn btn-pill align-self-start">Acquista Ora</button>
+        </div>
       </div>
-      <!-- imgs-grid -->
+
+      <div class="container hero-carousel__slider">
+        <div class="row row-cols-2 row-cols-sm-3 row-cols-lg-6 g-2">
+          <div class="col">
+            <img
+              class="rounded-3 slider-img slider-img--active"
+              src="./img/returnal-listing-thumb-01-ps5.jpg"
+              alt=""
+            />
+          </div>
+
+          <div class="col">
+            <img
+              class="rounded-3 slider-img"
+              src="./img/ratchet-and-clank-rift-apart-keyart.jpg"
+              alt=""
+            />
+          </div>
+
+          <div class="col">
+            <img
+              class="rounded-3 slider-img"
+              src="./img/returnal-listing-thumb-01-ps5.jpg"
+              alt=""
+            />
+          </div>
+
+          <div class="col">
+            <img
+              class="rounded-3 slider-img"
+              src="./img/ratchet-and-clank-rift-apart-keyart.jpg"
+              alt=""
+            />
+          </div>
+
+          <div class="col">
+            <img
+              class="rounded-3 slider-img"
+              src="./img/returnal-listing-thumb-01-ps5.jpg"
+              alt=""
+            />
+          </div>
+
+          <div class="col">
+            <img
+              class="rounded-3 slider-img"
+              src="./img/ratchet-and-clank-rift-apart-keyart.jpg"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
     </section>
 
     <section class="ps5">
@@ -46,12 +242,20 @@
       <!-- imgs-grid -->
     </section>
 
-    <section class="hero">
-      <div>
-        <!-- bg-image -->
-        <h3></h3>
-        <p></p>
-        <button></button>
+    <section class="hero hero--it-takes-two">
+      <div class="container text-white d-flex flex-column justify-content-end">
+        <img
+          class="it-takes-two-banner-logo"
+          src="./img/it-takes-two-logo.png"
+          alt="Logo It Takes Two"
+        />
+        <h3>Un'avventura cooperativa selvaggia ti attende</h3>
+        <p>
+          Trova un amico e partite insieme per l'avventura più folle delle
+          vostre vite in In Takes Two, un gioco d'avventura cooperativa a
+          piattaforme che stravolge il suo genere
+        </p>
+        <button class="btn btn-pill align-self-start">Acquista ora</button>
       </div>
     </section>
 

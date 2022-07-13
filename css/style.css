@@ -1,1 +1,68 @@
-/* Components */
+:root {
+  --btn-orange: #cd3d0f;
+}
+
+img {
+  width: 100%;
+}
+
+header .justify-content-end {
+  background-color: black;
+  padding: 0.5rem;
+}
+
+header .justify-content-end img {
+  width: 3rem;
+}
+
+.hero {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 80vh;
+}
+
+.hero--returnal {
+  background-image: url(../img/jumbo-bg.png);
+}
+
+.hero--it-takes-two {
+  background-image: url(../img/it-takes-two-hero-banner-desktop.jpg);
+}
+
+.hero.hero--returnal .container,
+.hero.hero--it-takes-two .container {
+  height: 100%;
+  padding-bottom: 1rem;
+}
+
+.hero-carousel__slider {
+  margin-top: 1rem;
+}
+
+.returnal-banner-logo {
+  width: 65%;
+  margin-bottom: 1rem;
+}
+
+.it-takes-two-banner-logo {
+  width: 65%;
+  margin-bottom: 1rem;
+}
+
+.btn-pill {
+  border-radius: 50px;
+  background-color: var(--btn-orange);
+  color: white;
+  border: none;
+  padding: 0.5rem 0.75rem;
+  line-height: 1;
+}
+
+@media screen and (min-width: 992px) {
+  .hero h3,
+  .hero p,
+  .hero img {
+    width: 35%;
+  }
+}
