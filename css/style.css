@@ -1,7 +1,9 @@
+/* Generic */
 :root {
   --btn-orange: #cd3d0f;
   --btn-blue: #2d64e6;
   --btn-grey: #d9dadc;
+  --btn-dark-grey: #363636;
   --bg-grey: #1f1f1f;
   --bg-light-grey: #bebcbb;
   --bg-blue: #00439c;
@@ -16,55 +18,6 @@ menu {
 
 img {
   width: 100%;
-}
-
-header .justify-content-end {
-  background-color: black;
-  padding: 0.5rem;
-}
-
-header .justify-content-end img {
-  width: 3rem;
-}
-
-.hero {
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  height: 80vh;
-}
-
-.hero--returnal {
-  background-image: url(../img/jumbo-bg.png);
-}
-
-.hero--it-takes-two {
-  background-image: url(../img/it-takes-two-hero-banner-desktop.jpg);
-}
-
-.hero.hero--returnal .container,
-.hero.hero--it-takes-two .container {
-  height: 100%;
-  padding-bottom: 1rem;
-}
-
-.hero-carousel__slider {
-  padding-block: 1rem;
-}
-
-.slider-img--active {
-  outline: 2px solid #0072ce;
-  outline-offset: 0.125rem;
-}
-
-.returnal-banner-logo {
-  width: 65%;
-  margin-bottom: 1rem;
-}
-
-.it-takes-two-banner-logo {
-  width: 65%;
-  margin-bottom: 1rem;
 }
 
 .btn-pill {
@@ -85,99 +38,15 @@ header .justify-content-end img {
   color: var(--btn-blue);
 }
 
-.section-header {
-  text-align: center;
+.btn--dark-grey {
+  background-color: var(--btn-dark-grey);
 }
 
-.section-header h2,
-.section-header h3 {
-  margin-bottom: 2rem;
-  font-weight: 600;
+.btn--icon svg {
+  width: 24px;
 }
 
-.ps5__subtitle {
-  color: var(--btn-blue);
-  text-transform: uppercase;
-  margin-bottom: 0;
-}
-
-.ps5 h2 {
-  line-height: 0.75;
-}
-
-.ps5__image--active {
-  position: relative;
-}
-
-.ps5__image--active::after {
-  border-bottom: 2px solid #0072ce;
-  display: block;
-  content: "";
-  position: absolute;
-  left: 0.75rem;
-  right: 0.75rem;
-}
-
-.ps5__slider {
-  margin-bottom: 2rem;
-}
-
-.new-releases {
-  background-color: var(--bg-grey);
-  color: white;
-}
-
-.card-custom {
-  display: flex;
-  flex-direction: column;
-}
-
-.card--ver p {
-  min-height: 4.5rem;
-}
-
-.ps-plus.banner {
-  background-color: var(--bg-light-grey);
-}
-
-.ps-plus__logo,
-.ps-now__logo {
-  width: 55%;
-}
-
-.ps-plus .row > img,
-.ps-now .row > img {
-  display: none;
-}
-
-.ps-now.banner {
-  background-color: var(--bg-dark-blue);
-}
-
-footer {
-  background-color: var(--bg-blue);
-}
-
-@media screen and (min-width: 992px) {
-  .hero h3,
-  .hero p,
-  .hero img {
-    width: 25%;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .card--hor {
-    flex-direction: row;
-    align-items: center;
-  }
-
-  .ps-plus .row > img,
-  .ps-now .row > img {
-    display: block;
-  }
-}
-
+/* Overwrite Bootstrap */
 .dropdown-toggle::after {
   border: 0;
   background-image: url(../img/chevron-down-solid.svg);
@@ -200,6 +69,171 @@ footer {
   color: rgba(0, 0, 0, 0.7);
 }
 
-.btn--icon svg {
-  width: 24px;
+/* Header component */
+
+header .justify-content-end {
+  background-color: black;
+  padding: 0.5rem;
+}
+
+header .justify-content-end img {
+  width: 3rem;
+}
+
+.container-xs {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+/* Hero component */
+.hero {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 80vh;
+}
+
+.hero--returnal {
+  background-image: url(../img/jumbo-bg.png);
+}
+
+.hero--it-takes-two {
+  background-image: url(../img/it-takes-two-hero-banner-desktop.jpg);
+}
+
+.hero .container {
+  height: 100%;
+  padding-bottom: 1rem;
+}
+
+.returnal-banner-logo {
+  width: 65%;
+  margin-bottom: 1rem;
+}
+
+.it-takes-two-banner-logo {
+  width: 65%;
+  margin-bottom: 1rem;
+}
+
+.hero-carousel__slider {
+  padding-block: 1rem;
+}
+
+.slider-img--active {
+  outline: 2px solid #0072ce;
+  outline-offset: 0.125rem;
+}
+
+/* Section header component */
+.section-header {
+  text-align: center;
+}
+
+.section-header h2,
+.section-header h3 {
+  margin-bottom: 2rem;
+  font-weight: 600;
+}
+
+.ps5__subtitle {
+  color: var(--btn-blue);
+  text-transform: uppercase;
+  margin-bottom: 0;
+}
+
+/* Card custom component */
+.card-custom {
+  display: flex;
+  flex-direction: column;
+}
+
+.card--ver p {
+  min-height: 4.5rem;
+}
+
+.card-rounded {
+  border-radius: 1rem;
+}
+
+/* PS5 section */
+.ps5 h2 {
+  line-height: 0.75;
+}
+
+.ps5__image--active {
+  position: relative;
+}
+
+.ps5__image--active::after {
+  border-bottom: 2px solid #0072ce;
+  display: block;
+  content: "";
+  position: absolute;
+  left: 0.75rem;
+  right: 0.75rem;
+}
+
+.ps5__slider {
+  margin-bottom: 2rem;
+}
+
+/* New releases section */
+.new-releases {
+  background-color: var(--bg-grey);
+  color: white;
+}
+
+/* PS Plus/Playstation Now section */
+.ps-plus.banner {
+  background-color: var(--bg-light-grey);
+}
+
+.banner {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.ps-plus__logo,
+.ps-now__logo {
+  width: 55%;
+}
+
+.ps-plus .row > img,
+.ps-now .row > img {
+  display: none;
+}
+
+.ps-now.banner {
+  background-color: var(--bg-dark-blue);
+}
+
+/* Footer component */
+footer {
+  background-color: var(--bg-blue);
+}
+
+@media screen and (min-width: 992px) {
+  .hero h3,
+  .hero p,
+  .hero img {
+    width: 25%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .card--hor {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .ps-plus .row > img,
+  .ps-now .row > img {
+    display: block;
+  }
+
+  .banner {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
 }
