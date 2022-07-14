@@ -1,7 +1,10 @@
 :root {
   --btn-orange: #cd3d0f;
   --btn-blue: #2d64e6;
+  --btn-grey: #d9dadc;
   --bg-grey: #1f1f1f;
+  --bg-light-grey: #bebcbb;
+  --bg-dark-blue: #161c3b;
 }
 
 img {
@@ -70,6 +73,11 @@ header .justify-content-end img {
   background-color: var(--btn-blue);
 }
 
+.btn--grey {
+  background-color: var(--btn-grey);
+  color: var(--btn-blue);
+}
+
 .section-header {
   text-align: center;
 }
@@ -103,7 +111,22 @@ header .justify-content-end img {
   flex-direction: column;
 }
 
-.card--ver {
+.ps-plus.banner {
+  background-color: var(--bg-light-grey);
+}
+
+.ps-plus__logo,
+.ps-now__logo {
+  width: 55%;
+}
+
+.ps-plus .row > img,
+.ps-now .row > img {
+  display: none;
+}
+
+.ps-now.banner {
+  background-color: var(--bg-dark-blue);
 }
 
 @media screen and (min-width: 992px) {
@@ -118,5 +141,10 @@ header .justify-content-end img {
   .card--hor {
     flex-direction: row;
     align-items: center;
+  }
+
+  .ps-plus .row > img,
+  .ps-now .row > img {
+    display: block;
   }
 }
