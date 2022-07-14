@@ -129,7 +129,7 @@
               </li>
             </ul>
             <div class="d-flex">
-              <li class="nav-item dropdown">
+              <div class="nav-item dropdown">
                 <a
                   class="nav-link dropdown-toggle"
                   href="#"
@@ -144,10 +144,23 @@
                   class="dropdown-menu"
                   aria-labelledby="navbarMyPlaystation"
                 ></ul>
-              </li>
+              </div>
 
-              <button class="btn btn-outline-light" type="submit">
-                Search
+              <button class="btn btn-secondary rounded-pill">Accedi</button>
+              <button class="btn btn--icon">
+                <svg
+                  version="1.1"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  viewBox="0 0 50 50"
+                  data-di-rand="1620204969111"
+                >
+                  <g>
+                    <path
+                      d="M8,20.913 C8,14.344 13.344,9 19.913,9 C26.482,9 31.827,14.344 31.827,20.913 C31.827,27.482 26.482,32.827 19.913,32.827 C13.344,32.827 8,27.482 8,20.913 M45.112,43.585 L32.346,30.82 C34.518,28.099 35.827,24.658 35.827,20.913 C35.827,12.139 28.688,5 19.913,5 C11.139,5 4,12.139 4,20.913 C4,29.688 11.139,36.827 19.913,36.827 C23.503,36.827 26.808,35.618 29.474,33.604 L42.284,46.413 C42.674,46.804 43.186,46.999 43.698,46.999 C44.209,46.999 44.721,46.804 45.112,46.413 C45.502,46.023 45.698,45.511 45.698,44.999 C45.698,44.488 45.502,43.976 45.112,43.585"
+                    ></path>
+                  </g>
+                </svg>
               </button>
             </div>
           </div>
@@ -155,8 +168,8 @@
       </nav>
     </header>
 
-    <section class="hero-carousel">
-      <div class="hero hero--returnal">
+    <section class="hero-carousel mb-5">
+      <div class="hero hero--returnal mb-3">
         <div
           class="container text-white d-flex flex-column justify-content-end"
         >
@@ -246,7 +259,7 @@
         <img src="./img/playstation-5-thumb.png" alt="Ps5" />
       </div>
 
-      <div class="container">
+      <div class="container ps5__slider">
         <div class="row row-cols-3 row-cols-md-5">
           <div class="col ps5__image--active">
             <img
@@ -291,7 +304,7 @@
       </div>
     </section>
 
-    <section class="hero hero--it-takes-two">
+    <section class="hero hero--it-takes-two pb-3">
       <div class="container text-white d-flex flex-column justify-content-end">
         <img
           class="it-takes-two-banner-logo"
@@ -308,7 +321,7 @@
       </div>
     </section>
 
-    <section class="new-releases">
+    <section class="new-releases py-4">
       <div class="section-header text-start container">
         <h2>Nuove uscite</h2>
         <p>Giochi incredibili per PS4 e PS5 disponibili ora</p>
@@ -439,7 +452,7 @@
       </div>
     </section>
 
-    <section class="ps4 container">
+    <section class="ps4 container py-5">
       <div class="section-header">
         <h2>Esplora PlayStation® 4</h2>
         <p>
@@ -492,18 +505,20 @@
     <section class="ps-plus banner">
       <div class="container">
         <div class="row">
-          <div class="ps-plus__description col">
+          <div
+            class="ps-plus__description col d-flex flex-column justify-content-center"
+          >
             <img
               class="ps-plus__logo"
               src="./img/ps-plus-logo.png"
               alt="Logo Ps Plus"
             />
-            <p>
+            <p class="my-4">
               Migliora la tua esperienza PlayStation con l'accesso a
               multigiocatore online, giochi mensili, sconti esclusivi e altro
               ancora.
             </p>
-            <button class="btn btn-pill btn--grey">
+            <button class="btn btn-pill btn--grey align-self-start">
               Esplora PlayStation Plus
             </button>
           </div>
@@ -517,10 +532,10 @@
       </div>
     </section>
 
-    <section class="ps-store-discounts container">
+    <section class="ps-store-discounts container py-5">
       <div class="section-header">
         <h2>Nuovi sconti sul PlayStation Store</h2>
-        <p>
+        <p class="mb-4">
           Sconti pazzeschi, collezioni curate e saldi stagionali su PS5, Ps4 e
           PS VR, tutti in un unico posto.
         </p>
@@ -553,18 +568,20 @@
     <section class="ps-now banner text-white">
       <div class="container">
         <div class="row">
-          <div class="ps-now__description col">
+          <div
+            class="ps-now__description col d-flex flex-column justify-content-center"
+          >
             <img
               class="ps-now__logo"
               src="./img/ps-now-logo-two-column.png"
               alt="Logo Ps Now"
             />
-            <p>
+            <p class="my-4">
               Ottieni l'accesso immediato a una vastissima raccolta di oltre 800
               giochi per PS4, PS3 e PS2 su PS4 o PC Windows, con nuovi titoli
               aggiunti ogni mese.
             </p>
-            <button class="btn btn-pill btn--grey">
+            <button class="btn btn-pill btn--grey align-self-start">
               Esplora PlayStation Now
             </button>
           </div>
@@ -578,8 +595,10 @@
       </div>
     </section>
 
-    <section class="socials container">
-      <h5>Seguici sui social media</h5>
+    <section class="socials container py-5">
+      <h5 class="container text-center fw-bold mb-3 fs-3">
+        Seguici sui social media
+      </h5>
       <div class="container">
         <div class="row row-cols-2 row-cols-md-4">
           <div class="col">
@@ -598,96 +617,103 @@
       </div>
     </section>
 
-    <footer class="text-white">
+    <footer class="text-white py-5">
       <div class="container">
-        <div class="footer__ps-logo">
-          <svg
-            class="shared-nav-ps-logo"
-            width="50px"
-            height="50px"
-            version="1.1"
-            xmlns="http://www.w3.org/2000/svg"
-            xmlns:xlink="http://www.w3.org/1999/xlink"
-            viewBox="0 0 50 50"
-            data-di-res-id="51237b9e-85bdd8e5"
-            data-di-rand="1620209019838"
-          >
-            <g>
-              <g>
-                <path
-                  d="M5.8,32.1C4.3,33.1,4.8,35,8,35.9c3.3,1.1,6.9,1.4,10.4,0.8c0.2,0,0.4-0.1,0.5-0.1v-3.4l-3.4,1.1
+        <div class="row row-cols-1 row-cols-lg-2">
+          <div class="col">
+            <div class="footer__ps-logo">
+              <svg
+                class="shared-nav-ps-logo"
+                width="80px"
+                height="80px"
+                version="1.1"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                viewBox="0 0 50 50"
+                data-di-res-id="51237b9e-85bdd8e5"
+                data-di-rand="1620209019838"
+              >
+                <g>
+                  <g>
+                    <path
+                      d="M5.8,32.1C4.3,33.1,4.8,35,8,35.9c3.3,1.1,6.9,1.4,10.4,0.8c0.2,0,0.4-0.1,0.5-0.1v-3.4l-3.4,1.1
        c-1.3,0.4-2.6,0.5-3.9,0.2c-1-0.3-0.8-0.9,0.4-1.4l6.9-2.4V27l-9.6,3.3C8.1,30.7,6.9,31.3,5.8,32.1z M29,17.1v9.7
        c4.1,2,7.3,0,7.3-5.2c0-5.3-1.9-7.7-7.4-9.6C26,11,23,10.1,20,9.5v28.9l7,2.1V16.2c0-1.1,0-1.9,0.8-1.6C28.9,14.9,29,16,29,17.1z
         M42,29.8c-2.9-1-6-1.4-9-1.1c-1.6,0.1-3.1,0.5-4.5,1l-0.3,0.1v3.9l6.5-2.4c1.3-0.4,2.6-0.5,3.9-0.2c1,0.3,0.8,0.9-0.4,1.4
        l-10,3.7V40L42,34.9c1-0.4,1.9-0.9,2.7-1.7C45.4,32.2,45.1,30.8,42,29.8z"
-                  fill="#FFF"
-                ></path>
-              </g>
-            </g>
-          </svg>
-          <div class="d-flex align-items-center mx-1">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="16"
-              height="16"
-              fill="currentColor"
-              class="bi bi-globe"
-              viewBox="0 0 16 16"
-            >
-              <path
-                d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm7.5-6.923c-.67.204-1.335.82-1.887 1.855A7.97 7.97 0 0 0 5.145 4H7.5V1.077zM4.09 4a9.267 9.267 0 0 1 .64-1.539 6.7 6.7 0 0 1 .597-.933A7.025 7.025 0 0 0 2.255 4H4.09zm-.582 3.5c.03-.877.138-1.718.312-2.5H1.674a6.958 6.958 0 0 0-.656 2.5h2.49zM4.847 5a12.5 12.5 0 0 0-.338 2.5H7.5V5H4.847zM8.5 5v2.5h2.99a12.495 12.495 0 0 0-.337-2.5H8.5zM4.51 8.5a12.5 12.5 0 0 0 .337 2.5H7.5V8.5H4.51zm3.99 0V11h2.653c.187-.765.306-1.608.338-2.5H8.5zM5.145 12c.138.386.295.744.468 1.068.552 1.035 1.218 1.65 1.887 1.855V12H5.145zm.182 2.472a6.696 6.696 0 0 1-.597-.933A9.268 9.268 0 0 1 4.09 12H2.255a7.024 7.024 0 0 0 3.072 2.472zM3.82 11a13.652 13.652 0 0 1-.312-2.5h-2.49c.062.89.291 1.733.656 2.5H3.82zm6.853 3.472A7.024 7.024 0 0 0 13.745 12H11.91a9.27 9.27 0 0 1-.64 1.539 6.688 6.688 0 0 1-.597.933zM8.5 12v2.923c.67-.204 1.335-.82 1.887-1.855.173-.324.33-.682.468-1.068H8.5zm3.68-1h2.146c.365-.767.594-1.61.656-2.5h-2.49a13.65 13.65 0 0 1-.312 2.5zm2.802-3.5a6.959 6.959 0 0 0-.656-2.5H12.18c.174.782.282 1.623.312 2.5h2.49zM11.27 2.461c.247.464.462.98.64 1.539h1.835a7.024 7.024 0 0 0-3.072-2.472c.218.284.418.598.597.933zM10.855 4a7.966 7.966 0 0 0-.468-1.068C9.835 1.897 9.17 1.282 8.5 1.077V4h2.355z"
-              />
-            </svg>
-            <p class="mb-0">Country / Region: Italy</p>
-          </div>
-        </div>
-
-        <div class="container">
-          <div class="row row-cols-1 row-cols-md-3 justify-content-between">
-            <div class="col">
-              <ul>
-                <li>link footer</li>
-                <li>link footer</li>
-                <li>link footer</li>
-                <li>link footer</li>
-                <li>link footer</li>
-              </ul>
-            </div>
-
-            <div class="col">
-              <ul>
-                <li>link footer</li>
-                <li>link footer</li>
-                <li>link footer</li>
-                <li>link footer</li>
-                <li>link footer</li>
-                <li>link footer</li>
-                <li>link footer</li>
-              </ul>
-            </div>
-
-            <div class="col">
-              <ul>
-                <li>link footer</li>
-                <li>link footer</li>
-                <li>link footer</li>
-              </ul>
+                      fill="#FFF"
+                    ></path>
+                  </g>
+                </g>
+              </svg>
+              <div class="d-flex align-items-center">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-globe"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm7.5-6.923c-.67.204-1.335.82-1.887 1.855A7.97 7.97 0 0 0 5.145 4H7.5V1.077zM4.09 4a9.267 9.267 0 0 1 .64-1.539 6.7 6.7 0 0 1 .597-.933A7.025 7.025 0 0 0 2.255 4H4.09zm-.582 3.5c.03-.877.138-1.718.312-2.5H1.674a6.958 6.958 0 0 0-.656 2.5h2.49zM4.847 5a12.5 12.5 0 0 0-.338 2.5H7.5V5H4.847zM8.5 5v2.5h2.99a12.495 12.495 0 0 0-.337-2.5H8.5zM4.51 8.5a12.5 12.5 0 0 0 .337 2.5H7.5V8.5H4.51zm3.99 0V11h2.653c.187-.765.306-1.608.338-2.5H8.5zM5.145 12c.138.386.295.744.468 1.068.552 1.035 1.218 1.65 1.887 1.855V12H5.145zm.182 2.472a6.696 6.696 0 0 1-.597-.933A9.268 9.268 0 0 1 4.09 12H2.255a7.024 7.024 0 0 0 3.072 2.472zM3.82 11a13.652 13.652 0 0 1-.312-2.5h-2.49c.062.89.291 1.733.656 2.5H3.82zm6.853 3.472A7.024 7.024 0 0 0 13.745 12H11.91a9.27 9.27 0 0 1-.64 1.539 6.688 6.688 0 0 1-.597.933zM8.5 12v2.923c.67-.204 1.335-.82 1.887-1.855.173-.324.33-.682.468-1.068H8.5zm3.68-1h2.146c.365-.767.594-1.61.656-2.5h-2.49a13.65 13.65 0 0 1-.312 2.5zm2.802-3.5a6.959 6.959 0 0 0-.656-2.5H12.18c.174.782.282 1.623.312 2.5h2.49zM11.27 2.461c.247.464.462.98.64 1.539h1.835a7.024 7.024 0 0 0-3.072-2.472c.218.284.418.598.597.933zM10.855 4a7.966 7.966 0 0 0-.468-1.068C9.835 1.897 9.17 1.282 8.5 1.077V4h2.355z"
+                  />
+                </svg>
+                <p class="ms-2 mb-0">Country / Region: Italy</p>
+              </div>
             </div>
           </div>
+          <div class="col">
+            <div class="container">
+              <div class="row row-cols-1 row-cols-md-3 justify-content-between">
+                <div class="col">
+                  <ul>
+                    <li>link footer</li>
+                    <li>link footer</li>
+                    <li>link footer</li>
+                    <li>link footer</li>
+                    <li>link footer</li>
+                  </ul>
+                </div>
 
-          <img
-            class="w-auto"
-            height="36"
-            src="./img/sie-logo.svg"
-            alt="Logo Sony"
-          />
-          <p class="mb-0">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt
-            neque soluta odio est temporibus dolorum qui harum, odit animi.
-            Vitae voluptates neque dolore modi impedit beatae nihil! Iusto
-            asperiores laboriosam cumque quos? Commodi necessitatibus odio
-            libero ab consectetur, modi eius.
-          </p>
+                <div class="col">
+                  <ul>
+                    <li>link footer</li>
+                    <li>link footer</li>
+                    <li>link footer</li>
+                    <li>link footer</li>
+                    <li>link footer</li>
+                    <li>link footer</li>
+                    <li>link footer</li>
+                  </ul>
+                </div>
+
+                <div class="col">
+                  <ul>
+                    <li>link footer</li>
+                    <li>link footer</li>
+                    <li>link footer</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <img
+              class="w-auto"
+              height="48"
+              src="./img/sie-logo.svg"
+              alt="Logo Sony"
+            />
+            <p class="mb-0">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt
+              neque soluta odio est temporibus dolorum qui harum, odit animi.
+              Vitae voluptates neque dolore modi impedit beatae nihil! Iusto
+              asperiores laboriosam cumque quos? Commodi necessitatibus odio
+              libero ab consectetur, modi eius.
+            </p>
+          </div>
         </div>
       </div>
     </footer>

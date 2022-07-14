@@ -89,10 +89,20 @@ header .justify-content-end img {
   text-align: center;
 }
 
+.section-header h2,
+.section-header h3 {
+  margin-bottom: 2rem;
+  font-weight: 600;
+}
+
 .ps5__subtitle {
   color: var(--btn-blue);
   text-transform: uppercase;
   margin-bottom: 0;
+}
+
+.ps5 h2 {
+  line-height: 0.75;
 }
 
 .ps5__image--active {
@@ -106,6 +116,10 @@ header .justify-content-end img {
   position: absolute;
   left: 0.75rem;
   right: 0.75rem;
+}
+
+.ps5__slider {
+  margin-bottom: 2rem;
 }
 
 .new-releases {
@@ -148,7 +162,7 @@ footer {
   .hero h3,
   .hero p,
   .hero img {
-    width: 35%;
+    width: 25%;
   }
 }
 
@@ -162,4 +176,30 @@ footer {
   .ps-now .row > img {
     display: block;
   }
+}
+
+.dropdown-toggle::after {
+  border: 0;
+  background-image: url(../img/chevron-down-solid.svg);
+  width: 10px;
+  height: 10px;
+  background-repeat: no-repeat;
+  background-position: center;
+  vertical-align: middle;
+}
+
+.dropdown-toggle.show::after {
+  transform: rotate(-180deg);
+}
+
+.nav-link {
+  color: rgba(0, 0, 0, 0.55);
+}
+
+.nav-link:hover {
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.btn--icon svg {
+  width: 24px;
 }
