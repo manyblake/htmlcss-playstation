@@ -4,7 +4,14 @@
   --btn-grey: #d9dadc;
   --bg-grey: #1f1f1f;
   --bg-light-grey: #bebcbb;
+  --bg-blue: #00439c;
   --bg-dark-blue: #161c3b;
+}
+
+ul,
+ol,
+menu {
+  list-style: none;
 }
 
 img {
@@ -111,6 +118,10 @@ header .justify-content-end img {
   flex-direction: column;
 }
 
+.card--ver p {
+  min-height: 4.5rem;
+}
+
 .ps-plus.banner {
   background-color: var(--bg-light-grey);
 }
@@ -127,6 +138,10 @@ header .justify-content-end img {
 
 .ps-now.banner {
   background-color: var(--bg-dark-blue);
+}
+
+footer {
+  background-color: var(--bg-blue);
 }
 
 @media screen and (min-width: 992px) {
