@@ -1,0 +1,300 @@
+/* Generic */
+:root {
+  --btn-orange: #cd3d0f;
+  --btn-blue: #2d64e6;
+  --btn-grey: #d9dadc;
+  --btn-dark-grey: #363636;
+  --bg-grey: #1f1f1f;
+  --bg-light-grey: #bebcbb;
+  --bg-blue: #00439c;
+  --bg-dark-blue: #161c3b;
+}
+
+ul,
+ol,
+menu {
+  list-style: none;
+}
+
+img {
+  width: 100%;
+}
+
+.btn-pill {
+  border-radius: 50px;
+  background-color: var(--btn-orange);
+  color: white;
+  border: none;
+  padding: 0.5rem 0.75rem;
+  line-height: 1;
+}
+
+.btn--blue {
+  background-color: var(--btn-blue);
+}
+
+.btn--grey {
+  background-color: var(--btn-grey);
+  color: var(--btn-blue);
+}
+
+.btn--dark-grey {
+  background-color: var(--btn-dark-grey);
+}
+
+.btn--icon svg {
+  width: 24px;
+}
+
+/* Overwrite Bootstrap */
+.dropdown-toggle::after {
+  border: 0;
+  background-image: url(../img/chevron-down-solid.svg);
+  width: 10px;
+  height: 10px;
+  background-repeat: no-repeat;
+  background-position: center;
+  vertical-align: middle;
+}
+
+.dropdown-toggle.show::after {
+  transform: rotate(-180deg);
+}
+
+.nav-link {
+  color: rgba(0, 0, 0, 0.55);
+}
+
+.nav-link:hover {
+  color: rgba(0, 0, 0, 0.7);
+}
+
+/* Header component */
+
+header .justify-content-end {
+  background-color: black;
+  padding: 0.5rem;
+}
+
+header .justify-content-end img {
+  width: 3rem;
+}
+
+.container-xs {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+/* Hero component */
+.hero {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 80vh;
+}
+
+.hero--returnal {
+  background-image: url(../img/jumbo-bg.png);
+}
+
+.hero--it-takes-two {
+  background-image: url(../img/it-takes-two-hero-banner-desktop.jpg);
+}
+
+.hero .container {
+  height: 100%;
+  padding-bottom: 1rem;
+}
+
+.returnal-banner-logo {
+  width: 65%;
+  margin-bottom: 1rem;
+}
+
+.it-takes-two-banner-logo {
+  width: 65%;
+  margin-bottom: 1rem;
+}
+
+.hero-carousel__slider {
+  padding-block: 1rem;
+}
+
+.slider-img--active {
+  outline: 2px solid #0072ce;
+  outline-offset: 0.125rem;
+}
+
+.hero-carousel__slider .col {
+  position: relative;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.hero-carousel__slider .col:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  right: calc(var(--bs-gutter-x) * 0.5);
+  bottom: 0;
+  left: calc(var(--bs-gutter-x) * 0.5);
+  background-color: rgba(0, 0, 0, 0.55);
+  border-radius: 1rem;
+  transition: all 0.2s ease-in-out;
+}
+
+.hero-carousel__slider .col:hover:after {
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.hero-carousel__slider .col:hover {
+  transform: translateY(-0.75rem);
+}
+
+/* Section header component */
+.section-header {
+  text-align: center;
+}
+
+.section-header h2,
+.section-header h3 {
+  margin-bottom: 2rem;
+  font-weight: 600;
+}
+
+.ps5__subtitle {
+  color: var(--btn-blue);
+  text-transform: uppercase;
+  margin-bottom: 0;
+}
+
+/* Card custom component */
+.card-custom {
+  display: flex;
+  flex-direction: column;
+}
+
+.card--ver p {
+  min-height: 4.5rem;
+}
+
+.card-rounded {
+  border-radius: 1rem;
+}
+
+/* PS5 section */
+.ps5 h2 {
+  line-height: 0.75;
+}
+
+.ps5__slider .col {
+  position: relative;
+  cursor: pointer;
+}
+
+.ps5__slider .col:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  right: calc(var(--bs-gutter-x) * 0.5);
+  bottom: 0;
+  left: calc(var(--bs-gutter-x) * 0.5);
+  background-color: rgba(255, 255, 255, 0.55);
+  border-radius: 1rem;
+  transition: all 0.2s ease-in-out;
+}
+
+.ps5__slider .col:hover:before {
+  background-color: rgba(255, 255, 255, 0);
+}
+
+.ps5__image--active {
+  position: relative;
+}
+
+.ps5__image--active::after {
+  border-bottom: 2px solid #0072ce;
+  display: block;
+  content: "";
+  position: absolute;
+  left: 0.75rem;
+  right: 0.75rem;
+}
+
+.ps5__slider {
+  margin-bottom: 2rem;
+}
+
+/* New releases section */
+.new-releases {
+  background-color: var(--bg-grey);
+  color: white;
+}
+
+.card-game {
+  cursor: pointer;
+}
+
+.new-releases .card-game img {
+  transition: all 0.2s ease-in-out;
+}
+
+.new-releases .card-game img:hover {
+  transform: scale(105%);
+}
+
+/* PS Plus/Playstation Now section */
+.ps-plus.banner {
+  background-color: var(--bg-light-grey);
+}
+
+.banner {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.ps-plus__logo,
+.ps-now__logo {
+  width: 55%;
+}
+
+.ps-plus .row > img,
+.ps-now .row > img {
+  display: none;
+}
+
+.ps-now.banner {
+  background-color: var(--bg-dark-blue);
+}
+
+/* Footer component */
+footer {
+  background-color: var(--bg-blue);
+}
+
+@media screen and (min-width: 992px) {
+  .hero h3,
+  .hero p,
+  .hero img {
+    width: 25%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .card--hor {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .ps-plus .row > img,
+  .ps-now .row > img {
+    display: block;
+  }
+
+  .banner {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+}
